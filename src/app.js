@@ -2,9 +2,11 @@ import * as ROUTES from "./constants/routes";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Home, Signin, Signup, Browse } from "./pages";
 import { IsUserRedirect, ProtectedRoute } from "./helpers/routes";
+import { useAuthListener } from "./hooks";
 
 export default function App() {
-  const user = null;
+  const user = useAuthListener();
+  console.log(user);
   return (
     <Router>
       <IsUserRedirect
@@ -34,7 +36,6 @@ export default function App() {
       >
         <Home />
       </IsUserRedirect>
-      
     </Router>
   );
 }
