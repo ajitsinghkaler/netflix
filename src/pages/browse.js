@@ -1,6 +1,7 @@
-export default function Browse() {
-    return (
-        <p>browse</p>
+import { useContent } from "../hooks";
 
-    );
-  }
+export default function Browse() {
+  const { series } = useContent("series");
+  console.log(series)
+  return <p>browse</p>;
+}
