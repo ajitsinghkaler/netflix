@@ -58,7 +58,6 @@ Card.Meta = function CardMeta({ children, ...restProps }) {
 
 Card.Item = function CardItem({ item, children, ...restProps }) {
   const { setShowFeature, setItemFeature } = useContext(FeatureContext);
-  console.log(item);
   return (
     <Item
       onClick={() => {
