@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from "styled-components/macro";
 
 export const Container = styled.div``;
 
@@ -44,7 +44,7 @@ export const Close = styled.button`
     position: absolute;
     left: 10px;
     top: 0;
-    content: ' ';
+    content: " ";
     height: 22px;
     width: 2px;
     background-color: #333;

@@ -1,6 +1,6 @@
 import faqsData from "../fixtures/faqs.json";
 import { Accordion } from "../components";
-import {OptForm} from "../components";
+import { OptForm } from "../components";
 
 export function FaqsContainer() {
   return (

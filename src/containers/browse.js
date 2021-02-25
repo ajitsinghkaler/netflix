@@ -29,7 +29,7 @@ export function BrowseContainer({ slides }) {
     });
     const results = fuse.search(searchTerm).map(({ item }) => item);
     if (slideRows.length > 0 && searchTerm.length > 3 && results.length > 0) {
-      console.log(results)
+      console.log(results);
       setSlideRows(results);
     } else {
       setSlideRows(slides[category]);

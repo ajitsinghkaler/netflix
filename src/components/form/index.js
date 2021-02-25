@@ -7,7 +7,7 @@ import {
   Submit,
   Input,
   Link,
-  Text
+  Text,
 } from "./styles/form";
 
 export default function Form({ children, ...restProps }) {

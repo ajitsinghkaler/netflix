@@ -1,5 +1,5 @@
-import * as ROUTES from "./constants/routes";
 import { BrowserRouter as Router } from "react-router-dom";
+import * as ROUTES from "./constants/routes";
 import { Home, Signin, Signup, Browse } from "./pages";
 import { IsUserRedirect, ProtectedRoute } from "./helpers/routes";
 import { useAuthListener } from "./hooks";

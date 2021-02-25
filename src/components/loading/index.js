@@ -1,7 +1,6 @@
 import { Spinner, LockBody, Picture, ReleaseBody } from "./styles/loading";
 
 export default function Loading({ src, ...restProps }) {
-
   return (
     <Spinner {...restProps}>
       <LockBody />
@@ -10,6 +9,6 @@ export default function Loading({ src, ...restProps }) {
   );
 }
 
-Loading.ReleaseBody = function LoadingReleaseBody(){
-    return <ReleaseBody/>
-}
+Loading.ReleaseBody = function LoadingReleaseBody() {
+  return <ReleaseBody />;
+};
